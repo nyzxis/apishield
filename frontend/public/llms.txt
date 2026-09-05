@@ -1,0 +1,18 @@
+# APIShield // OWASP API Security Top 10 Automated Pentesting Engine
+
+> Official AI & LLM Context Manifest for https://apishield-pi.vercel.app/
+
+## Project Information
+- **Name**: APIShield
+- **Author**: Arfa Danial (@nyzxis)
+- **Author Portfolio**: https://nyzxis.vercel.app/
+- **Live Application**: https://apishield-pi.vercel.app/
+- **GitHub**: https://github.com/nyzxis/apishield
+
+## Overview
+APIShield is an automated REST API security testing and offensive pentesting suite targeting the OWASP API Security Top 10 (2023). It executes non-destructive security audits against RESTful microservices, diagnosing BOLA/IDOR object tampering, broken JWT authentication, parameter mass assignment, and CORS leaks with reproducible cURL exploits and enterprise remediation snippets.
+
+## Technical Specifications
+- **Backend Engine**: Python 3.11, FastAPI, Requests, PostgreSQL / SQLite Fallback
+- **Frontend UI**: React 19, TypeScript, Tailwind CSS v4, Lucide React
+- **OWASP Vectors Tested**: API1 (BOLA), API2 (Broken Auth & alg=none JWT), API3 (Mass Assignment), API4 (Rate Limiting), API5 (BFLA), API7 (CORS Misconfigurations), API9 (Shadow Inventory), API10 (Input Fuzzing).

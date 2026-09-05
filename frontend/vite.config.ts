@@ -14,4 +14,17 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('lucide-react')) return 'vendor-lucide';
+            if (id.includes('react')) return 'vendor-react';
+          }
+        },
+      },
+    },
+  },
 });
