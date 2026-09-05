@@ -24,7 +24,7 @@ class APISecurityScanner:
         self.timeout = timeout
         self.session = requests.Session()
         self.session.headers.update({
-            "User-Agent": "APIShield-Security-Auditor/1.0 (+https://apishield.vercel.app/)",
+            "User-Agent": "APIShield-Security-Auditor/1.0 (+https://apishield-pi.vercel.app/)",
             "Accept": "application/json, text/plain, */*"
         })
 
